@@ -1,4 +1,4 @@
-# hppPrograms: HP Prime Programs
+# HP Prime Programs
 A collection of programs for the HP Prime Graphing Calculator.
 
 Mainly in Python.
