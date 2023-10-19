@@ -4,36 +4,6 @@
 from os import scandir, remove
 
 
-def write_python_wrapper(file):
-    """Write a wrapper for the python program file."""
-    print("Writing src file for " + file.name + "...", end="")
-    name = file.name[:-3]
-
-    output = f"""#PYTHON EXPORT {name}()\n\n"""
-    with open(file, "r") as f:
-        output += f.read()
-
-    output += f"""\n#end"""
-
-    with open(f"processed/{name}_src.hpprogram", "w") as f:
-        f.write(output)
-    print("done.")
-
-
-def write_hpprogram(file):
-    """Write a hp prime program file to run the python program file."""
-    print("Writing command for " + file.name + "...", end="")
-    name = file.name[:-3]
-    output = f"""\
-EXPORT {name}()
-Begin
-{name}()
-End;"""
-    with open(f"processed/{name}.hpprogram", "w") as f:
-        f.write(output)
-    print("done.")
-
-
 def main():
     """Main processing program."""
     clearProccessed = True
@@ -63,9 +33,22 @@ def main():
 
             # check if the file is a python program
             if file.name.endswith(".py"):
-                print("Processing " + file.name)
-                write_python_wrapper(file)
-                write_hpprogram(file)
+                print("Processing " + file.name + "...", end="")
+
+                name = file.name[:-3]
+                output = """#PYTHON wrapper\n"""
+                output += f"""print("\\n" + "="*5 + {file.name} + "="*5)"""
+                with open(file, "r") as f:
+                    output += f.read()
+
+                output += f"""\n#END"""
+                output += f"""EXPORT {name}()"""
+                output += """    PYTHON(wrapper)"""
+                output += """END;"""
+
+                with open(f"processed/{name}.hpprogram", "w") as f:
+                    f.write(output)
+                print("done.")
                 print("")
     print("Done processing files.")
 

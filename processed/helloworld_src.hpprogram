@@ -1,5 +1,0 @@
-#PYTHON EXPORT helloworld()
-
-print("Hello World!")
-
-#end

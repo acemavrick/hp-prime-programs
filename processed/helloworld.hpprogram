@@ -1,4 +1,4 @@
-EXPORT helloworld()
-Begin
-helloworld()
-End;
+#PYTHON wrapper
+print("\n" + "="*5 + helloworld.py + "="*5)print("Hello World!")
+
+#ENDEXPORT helloworld()    PYTHON(wrapper)END;
