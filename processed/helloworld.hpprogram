@@ -1,4 +1,7 @@
 #PYTHON wrapper
 print("\n" + "="*5 + helloworld.py + "="*5)print("Hello World!")
 
-#ENDEXPORT helloworld()    PYTHON(wrapper)END;
+#END
+EXPORT helloworld()
+    PYTHON(wrapper)
+END;

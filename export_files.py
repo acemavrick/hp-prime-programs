@@ -42,9 +42,9 @@ def main():
                     output += f.read()
 
                 output += f"""\n#END"""
-                output += f"""EXPORT {name}()"""
-                output += """    PYTHON(wrapper)"""
-                output += """END;"""
+                output += f"""\nEXPORT {name}()"""
+                output += """\n    PYTHON(wrapper)"""
+                output += """\nEND;"""
 
                 with open(f"processed/{name}.hpprogram", "w") as f:
                     f.write(output)
