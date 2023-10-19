@@ -37,7 +37,7 @@ def main():
 
                 name = file.name[:-3]
                 output = """#PYTHON wrapper\n"""
-                output += f"""print("\\n" + "="*5 + {file.name} + "="*5)"""
+                output += f"""print("\\n" + "="*5 + {file.name} + "="*5+"\n")\n"""
                 with open(file, "r") as f:
                     output += f.read()
 
