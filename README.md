@@ -5,9 +5,9 @@ Mainly in Python.
 
 This repository is able to be opened as a PyCharm project (that's the .idea directory).
 
-## To Do
+Files are exported as text files. Copy/paste it into a new program using HPConnect software.
 
-- Edit processer: Wrapper programs not required.
+## To Do
 
 - Learn how to make better programs in hpPrime.
 

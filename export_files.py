@@ -46,7 +46,7 @@ def main():
                 output += """\n    PYTHON(wrapper)"""
                 output += """\nEND;"""
 
-                with open(f"processed/{name}.hpprogram", "w") as f:
+                with open(f"processed/{name}.txt", "w") as f:
                     f.write(output)
                 print("done.")
                 print("")
