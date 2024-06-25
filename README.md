@@ -1,15 +1,20 @@
 # HP Prime Programs
-A collection of programs for the HP Prime Graphing Calculator.
 
-Mainly in Python.
+A collection of programs for the HP Prime Graphing Calculator (G2), built mainly for the Texas General Mathematica Academic UIL competition.
 
-This repository is able to be opened as a PyCharm project (that's the .idea directory).
+*Note: The programs can only be viewed and edited using the HP Connectivity Kit*
 
-Files are exported as text files. Copy/paste it into a new program using HPConnect software.
+## How to Use
 
-## To Do
-
-- Learn how to make better programs in hpPrime.
+1. Download and set up HP Connectivity Kit, if not done.
+2. Download desired programs (.hpprgrm)
+3. Using HP Connectivity Kit, transfer to the HP Prime.
+4. Programs should show up in the `user` program menu
 
 ## Resources
-[Programming hpPrime tutorial](https://literature.hpcalc.org/community/hpprime-prog-tutorial.pdf)
+
+[HP Connectivity Kit](https://hpcalcs.com/download/)
+
+## Program Documentation
+
+*Coming soon (August 2024)*

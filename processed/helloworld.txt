@@ -1,9 +1,0 @@
-#PYTHON wrapper
-print("\n" + "="*5 + helloworld.py + "="*5+"
-")
-print("Hello World!")
-
-#END
-EXPORT helloworld()
-    PYTHON(wrapper)
-END;
